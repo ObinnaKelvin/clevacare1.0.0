@@ -6,6 +6,7 @@ function Dashboard() {
     <div className='dashboard-container'>
         
         <Sidebar />
+        
         Dashboard
     </div>
   )

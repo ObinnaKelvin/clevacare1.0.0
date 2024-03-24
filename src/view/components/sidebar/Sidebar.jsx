@@ -35,47 +35,69 @@ function Sidebar() {
             } */}
 
                 <div className="sidebar-menu-item">
-                    <div className="left"><RiIcons.RiDashboardLine style={{width: '25px',height: '25px'}} /><div className="item-name">Dashboard</div></div>
+                    <Link to={'/'} className='link'>
+                        <div className="left"><RiIcons.RiDashboardLine style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Dashboard</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><TbIcons.TbCalendarPin style={{width: '25px',height: '25px'}} /><div className="item-name">Appointment</div></div>
+                    <Link to={'/appointment'} className='link'>
+                        <div className="left"><TbIcons.TbCalendarPin style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Appointment</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><AiIcons.AiOutlineUserAdd style={{width: '25px',height: '25px'}} /><div className="item-name">Registration</div></div>
+                    <Link to={'/registration'} className='link'>
+                        <div className="left"><AiIcons.AiOutlineUserAdd style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Registration</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><GiIcons.GiMoneyStack style={{width: '25px',height: '25px'}} /><div className="item-name">Billing</div></div>
+                    <Link to={'/billing'} className='link'>
+                        <div className="left"><GiIcons.GiMoneyStack style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Billing</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><IoIcons5.IoLibraryOutline style={{width: '25px',height: '25px'}} /><div className="item-name">EMR</div></div>
+                    <Link to={'/emr'} className='link'>
+                        <div className="left"><IoIcons5.IoLibraryOutline style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>EMR</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><GiIcons.GiMedicines style={{width: '25px',height: '25px'}} /><div className="item-name">Pharmacy</div></div>
+                    <Link to={'/pharmacy'} className='link'>
+                        <div className="left"><GiIcons.GiMedicines style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Pharmacy</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><ImIcons.ImLab style={{width: '25px',height: '25px'}} /><div className="item-name">Laboratory</div></div>
+                    <Link to={'/laboratory'} className='link'>
+                        <div className="left"><ImIcons.ImLab style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Laboratory</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><BsIcons.BsRadioactive style={{width: '25px',height: '25px'}} /><div className="item-name">Radiology</div></div>
+                    <Link to={'/radiology'} className='link'>
+                        <div className="left"><BsIcons.BsRadioactive style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Radiology</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><GiIcons.GiBed style={{width: '25px',height: '25px'}} /><div className="item-name">Wards</div></div>
+                    <Link to={'/ward-management'} className='link'>
+                        <div className="left"><GiIcons.GiBed style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Wards</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><FaIcons6.FaWarehouse style={{width: '25px',height: '25px'}} /><div className="item-name">Inventory</div></div>
+                    <Link to={'/inventory'} className='link'>
+                        <div className="left"><FaIcons6.FaWarehouse style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Inventory</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <div className="left"><RiIcons.RiAdminLine style={{width: '25px',height: '25px'}} /><div className="item-name">Administrator</div></div>
+                    <Link to={'/administration'} className='link'>
+                        <div className="left"><RiIcons.RiAdminLine style={{width: '25px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Administration</div></div>
+                    </Link>
                     <div className="right"></div>
                 </div>
         </div>

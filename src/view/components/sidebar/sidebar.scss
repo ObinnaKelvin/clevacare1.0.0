@@ -41,11 +41,24 @@
             width: 80%;
             margin: 0px auto;
             padding: 12px 10px;
+            
+            .link {
+              text-decoration: none;
+              color: #24dfad; 
+            }
 
             .left {
                 display: flex;
                 align-items: center;
                 gap: 5px;
+
+                .item-name.active {
+
+                }
+
+                .item-name.inactive {
+                    display: none;
+                }
             }
 
             .right {
