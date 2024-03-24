@@ -1,19 +1,23 @@
 import React from 'react'
-import  { CalendarDays, ChevronDown, ChevronUp, HandCoins, NotebookPen } from 'lucide-react'
+import  { CalendarDays, ChevronDown, ChevronUp, HandCoins, LayoutGrid, NotebookPen } from 'lucide-react'
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import * as IoIcons from 'react-icons/io';
+import * as RiIcons from 'react-icons/ri';
 
 export const SidebarData = [
 
     {
         title: 'Dashboard',
         path: '/dashboard',
-        icon: <LayoutGrid />,
-        caretClosed: <ChevronDown />,
-        caretOpened: <ChevronUp />,
+        icon: <RiIcons.RiDashboardLine />,
+        caretClosed: `<ChevronDown />`,
+        caretOpened: `<ChevronUp />`,
         subNav: [
             {
                 title: 'Appointment',
                 path: '/appointment',
-                icon: <CalendarDays />,
+                icon: `<CalendarDays />`,
 
             }
         ]

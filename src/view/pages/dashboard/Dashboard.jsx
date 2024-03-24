@@ -3,9 +3,10 @@ import Sidebar from '../../components/sidebar/Sidebar'
 
 function Dashboard() {
   return (
-    <div>
-        Dashboard
+    <div className='dashboard-container'>
+        
         <Sidebar />
+        Dashboard
     </div>
   )
 }
