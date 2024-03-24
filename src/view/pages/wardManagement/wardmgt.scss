@@ -1,0 +1,10 @@
+.wardmgt-container {
+    display: flex;
+    flex-direction: row;
+
+    .wardmgt-wrapper {
+        display: flex;
+        border: 1px solid red;
+        width: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+.appointment-container {
+    display: flex;
+    flex-direction: row;
+
+    .appointment-wrapper {
+        display: flex;
+        border: 1px solid red;
+        width: 100%;
+    }
+}

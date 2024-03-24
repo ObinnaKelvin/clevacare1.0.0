@@ -1,0 +1,10 @@
+.radiology-container {
+    display: flex;
+    flex-direction: row;
+
+    .radiology-wrapper {
+        display: flex;
+        border: 1px solid red;
+        width: 100%;
+    }
+}

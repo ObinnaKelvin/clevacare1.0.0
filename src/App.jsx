@@ -9,8 +9,11 @@ import Billing from "./view/pages/billing/Billing.jsx";
 import Emr from "./view/pages/emr/Emr.jsx";
 import Pharmacy from "./view/pages/pharmacy/Pharmacy.jsx";
 import Radiology from "./view/pages/radiology/Radiology.jsx";
+import Laboratory from "./view/pages/laboratory/Laboratory.jsx";
 import Registration from "./view/pages/registration/Registration.jsx";
 import WardMgt from "./view/pages/wardManagement/WardMgt.jsx";
+import Inventory from "./view/pages/inventory/Inventory.jsx";
+import Administration from "./view/pages/administration/Administration.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,8 +27,11 @@ function App() {
           <Route path='/emr' element={<Emr />}/>
           <Route path='/pharmacy' element={<Pharmacy />}/>
           <Route path='/radiology' element={<Radiology />}/>
+          <Route path='/laboratory' element={<Laboratory />}/>
           <Route path='/registration' element={<Registration />}/>
           <Route path='/ward-management' element={<WardMgt />}/>
+          <Route path='/inventory' element={<Inventory />}/>
+          <Route path='/administration' element={<Administration />}/>
       </Routes>
     </Router>
   )

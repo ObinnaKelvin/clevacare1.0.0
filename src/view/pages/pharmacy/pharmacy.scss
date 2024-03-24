@@ -1,0 +1,10 @@
+.pharmacy-container {
+    display: flex;
+    flex-direction: row;
+
+    .pharmacy-wrapper {
+        display: flex;
+        border: 1px solid red;
+        width: 100%;
+    }
+}

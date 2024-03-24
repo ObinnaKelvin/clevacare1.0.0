@@ -1,4 +1,10 @@
 .dashboard-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    .dashboard-wrapper {
+        display: flex;
+        border: 1px solid red;
+        width: 100%;
+    }
 }

@@ -1,8 +1,18 @@
 import React from 'react'
+import Sidebar from '../../components/sidebar/Sidebar'
+import './billing.scss'
 
 const Billing = () => {
   return (
-    <div>Billing</div>
+    <div className='billing-container'>
+        
+        <Sidebar />
+
+        <div className="billing-wrapper">
+          Billing
+
+        </div>
+    </div>
   )
 }
 
