@@ -1,6 +1,7 @@
 import React from 'react'
 import Sidebar from '../../components/sidebar/Sidebar'
 import './radiology.scss'
+import Navbar from '../../components/navbar/Navbar'
 
 
 function Radiology() {
@@ -8,11 +9,12 @@ function Radiology() {
     <div className='radiology-container'>
         
         <Sidebar />
+        <Navbar section={'Radiology'} />
 
-        <div className="radiology-wrapper">
-          Radiology
+        {/* <div className="radiology-wrapper">
+          
 
-        </div>
+        </div> */}
     </div>
   )
 }

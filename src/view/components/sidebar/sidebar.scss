@@ -3,11 +3,14 @@
     display: flex;
     flex-direction: column;
     // height: 100vh;
-    height: max-content;
+    height: 120vh;
     background-color: #0c315d;
     // justify-content: center;
-    position: relative;
+    // position: relative;
+    position: fixed;
     transition: linear 0.2s;
+    z-index: 3;
+    
 
     .sidebar-toggle {
         // border: 1px solid red;
@@ -23,7 +26,7 @@
         right: -20px;
         color: white;
         background-color: #114380;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .sidebar-menu-wrapper {

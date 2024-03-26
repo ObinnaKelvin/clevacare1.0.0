@@ -1,10 +1,167 @@
 .appointment-container {
     display: flex;
     flex-direction: row;
+    z-index: 1;
+    // border: 1px solid red;
 
     .appointment-wrapper {
         display: flex;
-        border: 1px solid red;
+        flex-direction: column;
         width: 100%;
+        margin: 70px 0px 0px 70px;
+        // border: 1px solid red;
+
+        .filter-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: max-content;
+            // border: 1px solid red;
+            padding: 0px 10px 10px 10px;
+
+            .left {
+                display: flex;
+                flex-direction: row;
+
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 7px;
+                    border-bottom: 1px solid #d0d0d0;
+                    color: #575757;
+                    height: max-content;
+                    padding: 7px 11px 7px 7px;
+                    cursor: pointer;
+                    // border-radius: 10px;
+                }
+
+            }
+
+            .right {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 7px;
+                    border: 1px solid #d0d0d0;
+                    color: #575757;
+                    height: max-content;
+                    padding: 7px 9px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .appointment-group {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 100px;
+            position: relative;
+            // border: 1px solid red;
+
+            .booking-item {
+                border: 1px solid #EEEEEE;
+                padding: 15px 15px;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 290px;
+                height: 135px;
+                position: relative;
+                background-color: white;
+
+                .booking-service {
+                    color: #8f8f8f;
+                    font-weight: 500;
+                    // border: 1px solid red;
+                    width: 230px;
+                    font-size: 13px;
+                }
+
+                .booking-user {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #757575;
+                    font-size: 12px;
+
+                    span {
+                        color: #2196f3;
+                    }
+                }
+
+                .booking-phone {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #757575;
+                    font-size: 12px;
+
+                    span {
+                        color: #2196f3;
+                    }
+                }
+
+                .booking-date {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: #757575;
+                    font-size: 12px;
+
+                    span {
+                        color: #2196f3;
+                    }
+                }
+
+                .booking-amount {
+                    position: absolute;
+                    margin: 35px auto 0px 200px;
+                    font-size: 15px;
+                }
+
+                .booking-status {
+                    position: absolute;
+                    // margin: 65px auto 0px 205px;
+                    margin: 85px auto 0px 200px;
+                    font-size: 12px;
+                    // border: 1px solid black;
+                    padding: 4px 8px;
+                    border-radius: 20px;
+                }
+
+                .booking-status.success {
+                    background-color: #3cd4cc;
+                    color: #fff;
+                }
+
+                .booking-status.pending {
+                    background-color: #f49b09;
+                    color: #fff;
+                }
+
+                .booking-status.cancel {
+                    background-color: #ec6494;
+                    color: #fff;
+                }
+
+                .booking-status.refund {
+                    background-color: #2196f3;
+                    color: #fff;
+                }
+
+            }
+        }
     }
 }
