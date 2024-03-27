@@ -10,7 +10,7 @@ import Emr from "./view/pages/emr/Emr.jsx";
 import Pharmacy from "./view/pages/pharmacy/Pharmacy.jsx";
 import Radiology from "./view/pages/radiology/Radiology.jsx";
 import Laboratory from "./view/pages/laboratory/Laboratory.jsx";
-import Registration from "./view/pages/registration/Registration.jsx";
+import PatientCare from "./view/pages/patientcare/PatientCare.jsx";
 import WardMgt from "./view/pages/wardManagement/WardMgt.jsx";
 import Inventory from "./view/pages/inventory/Inventory.jsx";
 import Administration from "./view/pages/administration/Administration.jsx";
@@ -28,7 +28,7 @@ function App() {
           <Route path='/pharmacy' element={<Pharmacy />}/>
           <Route path='/radiology' element={<Radiology />}/>
           <Route path='/laboratory' element={<Laboratory />}/>
-          <Route path='/registration' element={<Registration />}/>
+          <Route path='/patientcare' element={<PatientCare />}/>
           <Route path='/ward-management' element={<WardMgt />}/>
           <Route path='/inventory' element={<Inventory />}/>
           <Route path='/administration' element={<Administration />}/>

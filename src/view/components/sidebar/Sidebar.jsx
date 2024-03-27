@@ -45,14 +45,14 @@ function Sidebar() {
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <Link to={'/appointment'} className='link'>
-                        <div className="left"><TbIcons.TbCalendarPin style={{width: '21px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Appointment</div></div>
+                    <Link to={'/patientcare'} className='link'>
+                        <div className="left"><AiIcons.AiOutlineUserAdd style={{width: '21px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Patient Care</div></div>
                     </Link>
                     <div className="right"></div>
                 </div>
                 <div className="sidebar-menu-item">
-                    <Link to={'/registration'} className='link'>
-                        <div className="left"><AiIcons.AiOutlineUserAdd style={{width: '21px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Registration</div></div>
+                    <Link to={'/appointment'} className='link'>
+                        <div className="left"><TbIcons.TbCalendarPin style={{width: '21px',height: '25px'}} /><div className={`item-name ${sidebar ? 'active' : 'inactive'}`}>Appointment</div></div>
                     </Link>
                     <div className="right"></div>
                 </div>
